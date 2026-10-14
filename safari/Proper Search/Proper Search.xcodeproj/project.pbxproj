@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F18D8F330778D5900E46A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F18D8F230778D5900E46A42 /* AppDelegate.swift */; };
+		3F18D8F730778D5900E46A42 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D8F530778D5900E46A42 /* Main.html */; };
+		3F18D8F930778D5900E46A42 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D8F830778D5900E46A42 /* Icon.png */; };
+		3F18D8FB30778D5900E46A42 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D8FA30778D5900E46A42 /* Style.css */; };
+		3F18D8FD30778D5900E46A42 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D8FC30778D5900E46A42 /* Script.js */; };
+		3F18D8FF30778D5900E46A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F18D8FE30778D5900E46A42 /* ViewController.swift */; };
+		3F18D90230778D5900E46A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D90030778D5900E46A42 /* Main.storyboard */; };
+		3F18D90430778D5A00E46A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D90330778D5A00E46A42 /* Assets.xcassets */; };
+		3F18D90B30778D5B00E46A42 /* Proper Search Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3F18D90A30778D5B00E46A42 /* Proper Search Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F18D91030778D5B00E46A42 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F18D90F30778D5B00E46A42 /* SafariWebExtensionHandler.swift */; };
+		3F18D92330778D5B00E46A42 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D91C30778D5B00E46A42 /* background.js */; };
+		3F18D92430778D5B00E46A42 /* search-engine.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D91D30778D5B00E46A42 /* search-engine.js */; };
+		3F18D92530778D5B00E46A42 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D91E30778D5B00E46A42 /* popup.html */; };
+		3F18D92630778D5B00E46A42 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D91F30778D5B00E46A42 /* icons */; };
+		3F18D92730778D5B00E46A42 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D92030778D5B00E46A42 /* manifest.json */; };
+		3F18D92830778D5B00E46A42 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D92130778D5B00E46A42 /* popup.css */; };
+		3F18D92930778D5B00E46A42 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 3F18D92230778D5B00E46A42 /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F18D90C30778D5B00E46A42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F18D8E730778D5900E46A42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F18D90930778D5B00E46A42;
+			remoteInfo = "Proper Search Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F18D91730778D5B00E46A42 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				3F18D90B30778D5B00E46A42 /* Proper Search Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F18D8EF30778D5900E46A42 /* Proper Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proper Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F18D8F230778D5900E46A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F18D8F630778D5900E46A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		3F18D8F830778D5900E46A42 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3F18D8FA30778D5900E46A42 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		3F18D8FC30778D5900E46A42 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		3F18D8FE30778D5900E46A42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F18D90130778D5900E46A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F18D90330778D5A00E46A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F18D90530778D5A00E46A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F18D90A30778D5B00E46A42 /* Proper Search Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Proper Search Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F18D90F30778D5B00E46A42 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		3F18D91130778D5B00E46A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F18D91C30778D5B00E46A42 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		3F18D91D30778D5B00E46A42 /* search-engine.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "search-engine.js"; path = "../../../extension/search-engine.js"; sourceTree = "<group>"; };
+		3F18D91E30778D5B00E46A42 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../extension/popup.html; sourceTree = "<group>"; };
+		3F18D91F30778D5B00E46A42 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../extension/icons; sourceTree = "<group>"; };
+		3F18D92030778D5B00E46A42 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		3F18D92130778D5B00E46A42 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../../extension/popup.css; sourceTree = "<group>"; };
+		3F18D92230778D5B00E46A42 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../../extension/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F18D8EC30778D5900E46A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		3F18D90730778D5B00E46A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F18D8E630778D5900E46A42 = {
+			isa = PBXGroup;
+			children = (
+				3F18D8F130778D5900E46A42 /* Proper Search */,
+				3F18D90E30778D5B00E46A42 /* Proper Search Extension */,
+				3F18D8F030778D5900E46A42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F18D8F030778D5900E46A42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F18D8EF30778D5900E46A42 /* Proper Search.app */,
+				3F18D90A30778D5B00E46A42 /* Proper Search Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F18D8F130778D5900E46A42 /* Proper Search */ = {
+			isa = PBXGroup;
+			children = (
+				3F18D8F230778D5900E46A42 /* AppDelegate.swift */,
+				3F18D8FE30778D5900E46A42 /* ViewController.swift */,
+				3F18D90030778D5900E46A42 /* Main.storyboard */,
+				3F18D90330778D5A00E46A42 /* Assets.xcassets */,
+				3F18D90530778D5A00E46A42 /* Info.plist */,
+				3F18D8F430778D5900E46A42 /* Resources */,
+			);
+			path = "Proper Search";
+			sourceTree = "<group>";
+		};
+		3F18D8F430778D5900E46A42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F18D8F530778D5900E46A42 /* Main.html */,
+				3F18D8F830778D5900E46A42 /* Icon.png */,
+				3F18D8FA30778D5900E46A42 /* Style.css */,
+				3F18D8FC30778D5900E46A42 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F18D90E30778D5B00E46A42 /* Proper Search Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F18D91B30778D5B00E46A42 /* Resources */,
+				3F18D90F30778D5B00E46A42 /* SafariWebExtensionHandler.swift */,
+				3F18D91130778D5B00E46A42 /* Info.plist */,
+			);
+			path = "Proper Search Extension";
+			sourceTree = "<group>";
+		};
+		3F18D91B30778D5B00E46A42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F18D91C30778D5B00E46A42 /* background.js */,
+				3F18D91D30778D5B00E46A42 /* search-engine.js */,
+				3F18D91E30778D5B00E46A42 /* popup.html */,
+				3F18D91F30778D5B00E46A42 /* icons */,
+				3F18D92030778D5B00E46A42 /* manifest.json */,
+				3F18D92130778D5B00E46A42 /* popup.css */,
+				3F18D92230778D5B00E46A42 /* content.js */,
+			);
+			name = Resources;
+			path = "Proper Search Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F18D8EE30778D5900E46A42 /* Proper Search */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F18D91830778D5B00E46A42 /* Build configuration list for PBXNativeTarget "Proper Search" */;
+			buildPhases = (
+				3F18D8EB30778D5900E46A42 /* Sources */,
+				3F18D8EC30778D5900E46A42 /* Frameworks */,
+				3F18D8ED30778D5900E46A42 /* Resources */,
+				3F18D91730778D5B00E46A42 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F18D90D30778D5B00E46A42 /* PBXTargetDependency */,
+			);
+			name = "Proper Search";
+			productName = "Proper Search";
+			productReference = 3F18D8EF30778D5900E46A42 /* Proper Search.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F18D90930778D5B00E46A42 /* Proper Search Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F18D91430778D5B00E46A42 /* Build configuration list for PBXNativeTarget "Proper Search Extension" */;
+			buildPhases = (
+				3F18D90630778D5B00E46A42 /* Sources */,
+				3F18D90730778D5B00E46A42 /* Frameworks */,
+				3F18D90830778D5B00E46A42 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Proper Search Extension";
+			productName = "Proper Search Extension";
+			productReference = 3F18D90A30778D5B00E46A42 /* Proper Search Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F18D8E730778D5900E46A42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					3F18D8EE30778D5900E46A42 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					3F18D90930778D5B00E46A42 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 3F18D8EA30778D5900E46A42 /* Build configuration list for PBXProject "Proper Search" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F18D8E630778D5900E46A42;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3F18D8F030778D5900E46A42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F18D8EE30778D5900E46A42 /* Proper Search */,
+				3F18D90930778D5B00E46A42 /* Proper Search Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F18D8ED30778D5900E46A42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				3F18D8F930778D5900E46A42 /* Icon.png in Resources */,
+				3F18D90230778D5900E46A42 /* Main.storyboard in Resources */,
+				3F18D8FD30778D5900E46A42 /* Script.js in Resources */,
+				3F18D8F730778D5900E46A42 /* Main.html in Resources */,
+				3F18D90430778D5A00E46A42 /* Assets.xcassets in Resources */,
+				3F18D8FB30778D5900E46A42 /* Style.css in Resources */,
+			);
+		};
+		3F18D90830778D5B00E46A42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				3F18D92430778D5B00E46A42 /* search-engine.js in Resources */,
+				3F18D92630778D5B00E46A42 /* icons in Resources */,
+				3F18D92830778D5B00E46A42 /* popup.css in Resources */,
+				3F18D92730778D5B00E46A42 /* manifest.json in Resources */,
+				3F18D92530778D5B00E46A42 /* popup.html in Resources */,
+				3F18D92930778D5B00E46A42 /* content.js in Resources */,
+				3F18D92330778D5B00E46A42 /* background.js in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F18D8EB30778D5900E46A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				3F18D8FF30778D5900E46A42 /* ViewController.swift in Sources */,
+				3F18D8F330778D5900E46A42 /* AppDelegate.swift in Sources */,
+			);
+		};
+		3F18D90630778D5B00E46A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				3F18D91030778D5B00E46A42 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F18D90D30778D5B00E46A42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F18D90930778D5B00E46A42 /* Proper Search Extension */;
+			targetProxy = 3F18D90C30778D5B00E46A42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F18D8F530778D5900E46A42 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F18D8F630778D5900E46A42 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		3F18D90030778D5900E46A42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F18D90130778D5900E46A42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F18D91230778D5B00E46A42 /* Debug configuration for PBXProject "Proper Search" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F18D91330778D5B00E46A42 /* Release configuration for PBXProject "Proper Search" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3F18D91530778D5B00E46A42 /* Debug configuration for PBXNativeTarget "Proper Search Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Proper Search Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Proper Search";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.fullpagesearch.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3F18D91630778D5B00E46A42 /* Release configuration for PBXNativeTarget "Proper Search Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Proper Search Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Proper Search";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.fullpagesearch.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3F18D91930778D5B00E46A42 /* Debug configuration for PBXNativeTarget "Proper Search" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Proper Search/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Proper Search";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "local.fullpagesearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3F18D91A30778D5B00E46A42 /* Release configuration for PBXNativeTarget "Proper Search" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Proper Search/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Proper Search";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "local.fullpagesearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F18D8EA30778D5900E46A42 /* Build configuration list for PBXProject "Proper Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F18D91230778D5B00E46A42 /* Debug configuration for PBXProject "Proper Search" */,
+				3F18D91330778D5B00E46A42 /* Release configuration for PBXProject "Proper Search" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3F18D91430778D5B00E46A42 /* Build configuration list for PBXNativeTarget "Proper Search Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F18D91530778D5B00E46A42 /* Debug configuration for PBXNativeTarget "Proper Search Extension" */,
+				3F18D91630778D5B00E46A42 /* Release configuration for PBXNativeTarget "Proper Search Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3F18D91830778D5B00E46A42 /* Build configuration list for PBXNativeTarget "Proper Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F18D91930778D5B00E46A42 /* Debug configuration for PBXNativeTarget "Proper Search" */,
+				3F18D91A30778D5B00E46A42 /* Release configuration for PBXNativeTarget "Proper Search" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F18D8E730778D5900E46A42 /* Project object */;
+	validationLevel = 1;
+}

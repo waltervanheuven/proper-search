@@ -1,0 +1,22 @@
+{
+  "name": "proper-search",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/search.test.cjs",
+    "test:chrome-extension": "node --test tests/chrome-extension.test.cjs",
+    "test:firefox-extension": "uv run --with selenium==4.50.0 python tests/firefox-extension.test.py",
+    "test:webkit": "PLAYWRIGHT_BROWSERS_PATH=build/browsers SEARCH_TEST_BROWSER=webkit node --test tests/search.test.cjs",
+    "browsers:install": "PLAYWRIGHT_BROWSERS_PATH=build/browsers playwright install webkit",
+    "package:extension": "bash scripts/package-extension.sh",
+    "package:chrome": "python3 scripts/package-chrome.py",
+    "package:firefox": "python3 scripts/package-firefox.py",
+    "lint:firefox": "addons-linter 'dist/Proper Search-firefox.zip' --warnings-as-errors",
+    "package:safari": "bash scripts/package-safari.sh",
+    "build:safari": "bash scripts/build-safari.sh"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0",
+    "addons-linter": "^10.13.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Proper Search",
+  "version": "1.0.0",
+  "description": "Find text throughout a page, including hidden text and collapsed sections.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "action": {
+    "default_title": "Proper Search",
+    "default_icon": {
+      "48": "icons/search-48.png",
+      "128": "icons/search-128.png"
+    }
+  },
+  "icons": {
+    "48": "icons/search-48.png",
+    "128": "icons/search-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "proper-search@local.propersearch",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Proper Search for Chrome, Firefox, and Safari
+# <img src="extension/icons/search-128.png" alt="Proper Search icon" width="40" height="40"> Proper Search for Chrome, Firefox, and Safari
 
 Proper Search searches the **complete website page text**, including collapsed and hidden content. Matching hidden sections open temporarily. Closing search restores the extension’s changes while preserving changes made by the page afterward.
 
